@@ -1,0 +1,8 @@
+1 - normal: campainha + cachorro
+2 - crepúsculo: campainha + morcego  
+3 - selva tropical: sino + gorila 
+4 - praia: sino + caranguejo 
+5 - gelo: sino + urso polar 
+6 - japão: gongo + samurai 
+7 - egito: sino + mumia 
+... alien invasion: sino-ovni + hitler 
