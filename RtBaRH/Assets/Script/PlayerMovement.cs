@@ -8,6 +8,8 @@ public class PlayerMovement : MonoBehaviour
 {
     public PlayerController controller; 
     public float runSpeed = 40f; 
+    public float speedBonus = 20f; 
+
     float horizontalMove = 0f;   
     bool jump = false;   
     public GameObject cameraOBJ; 
@@ -18,6 +20,7 @@ public class PlayerMovement : MonoBehaviour
     public GameObject returnTXT; 
     public GameObject winTXT; 
     public GameObject bitedTXT; 
+    public GameObject candyIMG;  
 
     AudioSource audio; 
 	public AudioClip doorBell;
@@ -27,6 +30,7 @@ public class PlayerMovement : MonoBehaviour
     public static bool belled;
     public static bool bited;
     public static bool finish;
+    private bool speedCandying;
     private void Awake() {
         Time.timeScale = 1;
         startTXT.SetActive(false); 
@@ -36,17 +40,23 @@ public class PlayerMovement : MonoBehaviour
         returnTXT.SetActive(false); 
         winTXT.SetActive(false); 
         bitedTXT.SetActive(false); 
+        candyIMG.SetActive(false); 
     }
     private void Start() {
         audio = GetComponent<AudioSource>(); 
         belled = false; 
         finish = false; 
         bited = false; 
+
+        speedCandying = false; 
     }
     void Update()
     {
         if(Input.GetButtonDown("Jump")){
             jump = true; 
+        }
+        if(speedCandying && Input.GetKeyDown(KeyCode.LeftShift)){
+            StartCoroutine(SpeedCanded()); 
         }
         horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed; 
     }
@@ -60,6 +70,10 @@ public class PlayerMovement : MonoBehaviour
         }
     }
     private void OnTriggerEnter2D(Collider2D other) {
+        if(other.gameObject.tag == "speedCandy"){
+            candyIMG.SetActive(true); 
+            speedCandying = true; 
+        }
         if(other.gameObject.tag == "Boss"){
             bitedTXT.SetActive(true); 
 
@@ -170,5 +184,12 @@ public class PlayerMovement : MonoBehaviour
         Time.timeScale = 0;
         yield return new WaitForSecondsRealtime(3); 
         SceneManager.LoadScene("Trans1");
+    }
+    IEnumerator SpeedCanded(){
+        speedCandying = false; 
+        runSpeed = runSpeed + speedBonus; 
+        yield return new WaitForSecondsRealtime(1); 
+        runSpeed = runSpeed - speedBonus; 
+        candyIMG.SetActive(false); 
     }
 }
