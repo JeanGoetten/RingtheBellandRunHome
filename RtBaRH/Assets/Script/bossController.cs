@@ -12,8 +12,8 @@ public class bossController : MonoBehaviour
     void Update()
     {
         get_bited = PlayerMovement.bited; 
-        get_bited = PlayerMovement.finish; 
-        if(get_bited || get_finish){
+        get_finish = PlayerMovement.finish; 
+        if(get_bited | get_finish){
             bossSpeed = 0; 
         }
         transform.Translate(Vector3.left * bossSpeed);
