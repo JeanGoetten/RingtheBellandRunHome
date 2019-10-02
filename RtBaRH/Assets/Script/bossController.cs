@@ -9,13 +9,13 @@ public class bossController : MonoBehaviour
     private void Start() {
         bossSpeed = bossSpeed/10; 
     }
-    void Update()
+    void FixedUpdate()
     {
         get_bited = PlayerMovement.bited; 
         get_finish = PlayerMovement.finish; 
         if(get_bited | get_finish){
             bossSpeed = 0; 
         }
-        transform.Translate(Vector3.left * bossSpeed);
+        transform.Translate((Vector3.left * bossSpeed)*Time.deltaTime);
     }
 }

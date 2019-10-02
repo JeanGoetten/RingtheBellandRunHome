@@ -271,7 +271,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6548dc4dbeace26499eafc3272b8f503, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bossSpeed: 0.6
+  bossSpeed: 30
 --- !u!50 &7743595467731340631
 Rigidbody2D:
   serializedVersion: 4
@@ -286,13 +286,13 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 2c53e899496965548a3107e14e861745, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
+  m_CollisionDetection: 1
+  m_Constraints: 4
 --- !u!1 &919011564057303806
 GameObject:
   m_ObjectHideFlags: 0
