@@ -7,10 +7,6 @@ using UnityEngine.SceneManagement;
 public class sceneController : MonoBehaviour
 {    
     public string nextScene; 
-    void Start()
-    {
-        
-    }
     void Update()
     {
         StartCoroutine(SceneCall()); 

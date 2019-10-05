@@ -336,6 +336,7 @@ MonoBehaviour:
   controller: {fileID: 46022566}
   runSpeed: 20
   speedBonus: 40
+  trans: Trans1
   cameraOBJ: {fileID: 519420028}
   startTXT: {fileID: 3841568}
   jumpTXT: {fileID: 1685425134}
@@ -6512,6 +6513,11 @@ PrefabInstance:
       propertyPath: winTXT
       value: 
       objectReference: {fileID: 2146100320}
+    - target: {fileID: 3905404715317241805, guid: ad7cb1a447b838147bf1054341f50d82,
+        type: 3}
+      propertyPath: trans
+      value: Trans1
+      objectReference: {fileID: 0}
     - target: {fileID: 3905404715317241800, guid: ad7cb1a447b838147bf1054341f50d82,
         type: 3}
       propertyPath: m_LocalPosition.x

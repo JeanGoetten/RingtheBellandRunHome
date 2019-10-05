@@ -14,7 +14,7 @@ public class bossSpawn : MonoBehaviour
         get_belled = PlayerMovement.belled; 
 
         if(get_belled && !done){
-            Instantiate(goboss, new Vector3(155.34f, -1f, 0), Quaternion.identity);
+            Instantiate(goboss, transform.position, Quaternion.identity);
             done = true;  
         }
     }
