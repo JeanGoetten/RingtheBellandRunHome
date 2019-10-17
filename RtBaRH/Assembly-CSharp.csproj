@@ -61,6 +61,7 @@
      <Compile Include="Assets\Script\PlayerMovement.cs" />
      <Compile Include="Assets\Script\sceneController.cs" />
      <Compile Include="Assets\Script\soundThemeControll.cs" />
+     <Compile Include="Assets\Script\zigZagController.cs" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>C:/Users/selbs/Documents/GitHub/RingtheBellandRunHome/RtBaRH/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
