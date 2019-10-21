@@ -39,7 +39,7 @@ public class soundThemeControll : MonoBehaviour
             x = true; 
         }
         if(x){
-            Theme_Change(); 
+            StartCoroutine(Theme_Change()); 
         }
         if (get_finish)
         {
@@ -50,7 +50,9 @@ public class soundThemeControll : MonoBehaviour
             Lose(); 
         }
     }
-    void Theme_Change(){
+    IEnumerator Theme_Change(){
+
+        yield return new WaitForSecondsRealtime(1); 
         if(y){
             audio.clip = theme2; 
 	    	audio.Play(); 
@@ -77,5 +79,8 @@ public class soundThemeControll : MonoBehaviour
 
             w = false; 
         }
+    }
+    IEnumerator CD(){
+        yield return new WaitForSecondsRealtime(5); 
     }
 }

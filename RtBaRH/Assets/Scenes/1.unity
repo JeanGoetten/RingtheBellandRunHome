@@ -337,6 +337,7 @@ MonoBehaviour:
   runSpeed: 20
   speedBonus: 40
   trans: Trans1
+  nextTrans: Trans2
   cameraOBJ: {fileID: 519420028}
   startTXT: {fileID: 3841568}
   jumpTXT: {fileID: 1685425134}
@@ -2008,7 +2009,7 @@ MonoBehaviour:
   theme1: {fileID: 8300000, guid: ced6550205d227b4eb4536e60326eee5, type: 3}
   theme2: {fileID: 8300000, guid: f14a4e5a36721664c8e69531d857a87e, type: 3}
   theme3: {fileID: 8300000, guid: a67e6104415c1db4594fe9fae538de23, type: 3}
-  theme4: {fileID: 8300000, guid: a67e6104415c1db4594fe9fae538de23, type: 3}
+  theme4: {fileID: 8300000, guid: 42c0311b2dc3d8f4c8e51c8e3c2d90dd, type: 3}
 --- !u!1 &559235488
 GameObject:
   m_ObjectHideFlags: 0
@@ -4966,6 +4967,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   goboss: {fileID: 919011562857068742, guid: a91cc75995e051e49b1d73c9e1fd76f3, type: 3}
+  obj_position: {fileID: 1458411376}
 --- !u!4 &1458411376
 Transform:
   m_ObjectHideFlags: 0
@@ -6423,7 +6425,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -28}
+  m_AnchoredPosition: {x: 0, y: -18.2}
   m_SizeDelta: {x: 300, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2146100322
@@ -6456,7 +6458,7 @@ MonoBehaviour:
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
-    m_LineSpacing: 1
+    m_LineSpacing: 1.5
   m_Text: YOU ARE SAFE
 --- !u!222 &2146100323
 CanvasRenderer:
@@ -6517,6 +6519,11 @@ PrefabInstance:
         type: 3}
       propertyPath: trans
       value: Trans1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3905404715317241805, guid: ad7cb1a447b838147bf1054341f50d82,
+        type: 3}
+      propertyPath: nextTrans
+      value: Trans2
       objectReference: {fileID: 0}
     - target: {fileID: 3905404715317241800, guid: ad7cb1a447b838147bf1054341f50d82,
         type: 3}

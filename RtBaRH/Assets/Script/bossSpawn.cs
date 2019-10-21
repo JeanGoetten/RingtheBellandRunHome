@@ -6,6 +6,7 @@ public class bossSpawn : MonoBehaviour
 {
     public GameObject goboss;
     private bool get_belled, done; 
+    public Transform obj_position; 
     private void Start() {
         done = false; 
     }
@@ -14,7 +15,7 @@ public class bossSpawn : MonoBehaviour
         get_belled = PlayerMovement.belled; 
 
         if(get_belled && !done){
-            Instantiate(goboss, transform.position, Quaternion.identity);
+            Instantiate(goboss, obj_position.position, Quaternion.identity);
             done = true;  
         }
     }

@@ -10,6 +10,7 @@ public class PlayerMovement : MonoBehaviour
     public float runSpeed = 40f; 
     public float speedBonus = 20f; 
     public string trans; 
+    public string nextTrans; 
 
     float horizontalMove = 0f;   
     bool jump = false;   
@@ -179,7 +180,7 @@ public class PlayerMovement : MonoBehaviour
     }
     IEnumerator NextScene(){
         yield return new WaitForSecondsRealtime(5); 
-        SceneManager.LoadScene("Trans2");
+        SceneManager.LoadScene(nextTrans);
     }
     IEnumerator Lose(){
         Time.timeScale = 0;
