@@ -7,6 +7,10 @@ using UnityEngine.SceneManagement;
 public class sceneController : MonoBehaviour
 {    
     public string nextScene; 
+    
+    private void Awake() {
+        Cursor.visible = false;
+    }
     void Update()
     {
         StartCoroutine(SceneCall()); 
