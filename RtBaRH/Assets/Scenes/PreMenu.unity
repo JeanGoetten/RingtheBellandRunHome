@@ -150,7 +150,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nextScene: Menu
-  time: 8
+  time: 10
 --- !u!4 &388532668
 Transform:
   m_ObjectHideFlags: 0
@@ -206,7 +206,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -445,7 +445,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 2
-  m_Text: Just a Simple Tale
+  m_Text: dead parrot
 --- !u!222 &707032477
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -563,7 +563,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 12800000, guid: eb560a9dfa74e8e48992cfe459b637a4, type: 3}
     m_FontSize: 34
-    m_FontStyle: 1
+    m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 3
     m_MaxSize: 50
@@ -573,7 +573,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 2
-  m_Text: Just a Simple Tale
+  m_Text: dead parrot
 --- !u!222 &1012218190
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -480,7 +480,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 2
-  m_Text: Lugares quentes
+  m_Text: hot places
 --- !u!222 &1934568335
 CanvasRenderer:
   m_ObjectHideFlags: 0
